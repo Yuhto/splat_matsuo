@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: EC2インスタンスを作成するCloudFormationテンプレート
+
+#Metadeta:
+#Parameters:
+#Conditions
+
+Resources:
+  MyEC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      AvailabilityZone: ap-northeast-1
+      InstanceCount: 1
+      InstancePlatform: Red Hat Enterprise Linux
+      InstanceType: t2.micro
+      
+      
